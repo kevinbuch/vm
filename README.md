@@ -33,6 +33,11 @@ Note: `packer/template.json.example` is based on `Packer 0.7.1`.
 
 ```
 rake virtualbox:install
+```
+
+or
+
+```
 rake vmware:install
 ```
 
