@@ -68,13 +68,6 @@ namespace :box do
 end
 
 namespace :vm do
-  task :configure => [:git_configure]
-
-  task :git_configure do
-    require "#{ROOT_PATH}/lib/git_configurator"
-    GitConfigurator.new.execute
-  end
-
   task :start => [:configure, :up]
 
   task :provision do
