@@ -9,3 +9,9 @@ function symlink_ssh_auth_sock {
 function export_ssh_auth_sock {
   export SSH_AUTH_SOCK=/home/vagrant/.ssh/ssh_auth_sock
 }
+
+if [ -z "$TMUX" ]; then
+  symlink_ssh_auth_sock
+else
+  export_ssh_auth_sock
+fi

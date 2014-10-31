@@ -32,7 +32,7 @@ class ::Chef
     class UserBash < Bash
       def initialize(name, run_context=nil)
         super(name, run_context)
-	      user(Helper.user)
+        user(Helper.user)
       end
     end
 
